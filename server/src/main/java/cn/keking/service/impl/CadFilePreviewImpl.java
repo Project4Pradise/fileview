@@ -52,11 +52,11 @@ public class CadFilePreviewImpl implements FilePreview {
             String filePath = response.getContent();
             String imageUrls = null;
             if (StringUtils.hasText(outFilePath)) {
-                try {
+/*                try {
                     imageUrls = fileHandlerService.cadToPdf(filePath, outFilePath, cadPreviewType, fileAttribute);
                 } catch (Exception e) {
                     e.printStackTrace();
-                }
+                }*/
                 if (imageUrls == null) {
                     return otherFilePreview.notSupportedFile(model, fileAttribute, "CAD转换异常，请联系管理员");
                 }

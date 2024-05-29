@@ -10,10 +10,7 @@ import cn.keking.utils.KkFileUtils;
 import cn.keking.utils.UrlEncoderUtils;
 import cn.keking.utils.WebUtils;
 import cn.keking.web.filter.BaseUrlFilter;
-import com.aspose.cad.*;
-import com.aspose.cad.fileformats.cad.CadDrawTypeMode;
-import com.aspose.cad.fileformats.tiff.enums.TiffExpectedFormat;
-import com.aspose.cad.imageoptions.*;
+
 import com.itextpdf.text.pdf.PdfReader;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.pdfbox.pdmodel.PDDocument;
@@ -315,7 +312,7 @@ public class FileHandlerService implements InitializingBean {
      * @param outputFilePath pdf输出文件路径
      * @return 转换是否成功
      */
-    public String cadToPdf(String inputFilePath, String outputFilePath, String cadPreviewType, FileAttribute fileAttribute) throws Exception {
+/*    public String cadToPdf(String inputFilePath, String outputFilePath, String cadPreviewType, FileAttribute fileAttribute) throws Exception {
         final InterruptionTokenSource source = new InterruptionTokenSource();//CAD延时
         final SvgOptions SvgOptions = new SvgOptions();
         final PdfOptions pdfOptions = new PdfOptions();
@@ -417,7 +414,7 @@ public class FileHandlerService implements InitializingBean {
             source.dispose();
         }
         return "true";
-    }
+    }*/
 
     /**
      * @param str    原字符串（待截取原串）
